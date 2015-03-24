@@ -25,37 +25,42 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container" ng-controller="MainCtrl">
+    <div class="container-fluid" ng-controller="MainCtrl">
     
-      <div ng-include="'components/navbar/navbar.html'"></div>
-    
-      <div class="jumbotron text-center">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">
-          <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-          Always a pleasure scaffolding your apps.
-        </p>
-        <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-      </div>
-    
-      <div class="row">
-        <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
-          <div class="thumbnail">
-            <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
-            <div class="caption">
-              <h3>{{awesomeThing.title}}</h3>
-              <p>{{awesomeThing.description}}</p>
-              <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
-            </div>
+      <header class="text-center lined">
+          <img src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1001988/logo3.png" alt="I'm Yeoman"><br>
+          <h3>Welcome to Demo Day!</h3>
+          
+          <p class="tiy-info">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr. Cray small batch Brooklyn seitan asymmetrical Neutra chambray. </p>
+          <p class="tiy-info">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr. Cray small batch Brooklyn seitan asymmetrical Neutra chambray. Blue Bottle craft beer semiotics, Williamsburg hoodie chillwave health goth. Pork belly master cleanse pickled narwhal. Hashtag heirloom church-key kitsch, stumptown cred seitan try-hard yr. Actually vegan selfies skateboard cold-pressed small batch.</p>
+          <div class="learn">
+              <button class="btn btn-learn btn-lg">Check Out The Projects</button>
           </div>
-        </div>
-      </div>
+      </header>
+      
+      <section id="front-end">
+          <div class="team col-xs-12">
+              <div class="team-thumb col-xs-12 col-md-6">
+              <img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail">
+              </div>
+              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
+          </div>
+          <div class="individual col-xs-12">
+              <div class="individual-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
+              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
+          </div>
+      </section>
+      <section id="rails">
+          <div class="team col-xs-12">
+              <div class="team-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
+              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
+          </div>
+          <div class="individual col-xs-12">
+              <div class="individual-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
+              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
+          </div>
+      </section>
     
-      <hr>
-    
-      <div class="footer">
-        <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-      </div>
     
     </div>
     

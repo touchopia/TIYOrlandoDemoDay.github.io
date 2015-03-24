@@ -1,16 +1,55 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    
+    header {
+        background-color: rgba(57, 71, 78, 1);
+        height: 100vh;
+        color: white;
+        
+        img {
+            align-content: center;
+            margin-top: 5%;
+            width: 20%;
+        }
+        .tiy-info {
+            width: 70%;
+            margin: 2% auto 2%;
+            line-height: 3.8ex;
+            font-size: 12pt;
+        }
+    }
+    .learn {
+        position: absolute;
+        bottom: 0;
+        height: 12vh;
+        width: 100%;
+        background-color: rgba(255,255,255,0.4);
+        
+        .btn-learn {
+            margin-top: 1.4%;
+            background-color: rgba(57, 71, 78, 0.8);
+        }
+    }
+    .team, .individual{
+        .team-thumb, .individual-thumb {
+            img { 
+              margin: 0 0 5% 50%;
+            }
+        }
+        .bio {
+            text-align: center;
+        }
+    }
 }
-
-.thumbnail {
-  height: 200px;
-
-  img.pull-right {
-    width: 50px;
-  }
-}
+// .learn:after {
+//    content:"";
+//    position: absolute;
+//    z-index: -1;
+//    top: 0;
+//    bottom: 0;
+//    left: 50%;
+//    border-left: 1px solid red;
+//    }
 // injector
 // endinjector
