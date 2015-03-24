@@ -31,16 +31,129 @@
             background-color: rgba(57, 71, 78, 0.8);
         }
     }
-    .team, .individual{
-        .team-thumb, .individual-thumb {
-            img { 
-              margin: 0 0 5% 50%;
+    .front-end.container-fluid, .rails.container-fluid  {
+        text-align: center;
+        
+        .team-content {
+            width: 90%;
+            margin: 0 auto;
+        
+            .team-thumb, .individual-thumb {
+                img { 
+                  margin: 4% auto 5%;
+                }
             }
+            .bio {
+                text-align: center;
+                margin-top: 5%;
+            }
+          }
         }
-        .bio {
+    
+    .fee, .rails {
             text-align: center;
+            padding-bottom: 3%;
+            color: rgba(0,0,0,0.9);
+        }
+    .front-end li:nth-child(odd), .rails li:nth-child(odd) {
+        background: rgba(190,190,190,0.7);
+    }
+
+    .front-end li:nth-child(even), .rails li:nth-child(even) {
+        background: rgba(150,150,150,0.7);
+    } 
+    .front-end-title, .rails-title {
+        text-align: center;
+        background: rgba(190,190,190,0.7);
+        height: 15vh;
+        
+        h2 {
+            margin: 0;
+            padding: 3%;
+            border-bottom: 1px solid rgba(57, 71, 78, 1);
         }
     }
+}
+@media (max-width: 480px) {
+  .no-mobile {
+    display: none;
+  }
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    
+    header {
+        background-color: rgba(57, 71, 78, 1);
+        height: 100vh;
+        color: white;
+        
+        img {
+            align-content: center;
+            margin-top: 20%;
+            width: 80%;
+        }
+        .tiy-info {
+            width: 70%;
+            margin: 2% auto 2%;
+            line-height: 3.8ex;
+            font-size: 12pt;
+        }
+    }
+    .learn {
+        position: absolute;
+        bottom: 0;
+        height: 12vh;
+        width: 100%;
+        background-color: rgba(255,255,255,0.4);
+        
+        .btn-learn {
+            margin-top: 1.4%;
+            background-color: rgba(57, 71, 78, 0.8);
+        }
+    }
+    .front-end.container-fluid, .rails.container-fluid  {
+        text-align: center;
+        
+        .team-content {
+            width: 90%;
+            margin: 0 auto;
+        
+            .team-thumb, .individual-thumb {
+                img { 
+                  margin: 4% auto 5%;
+                }
+            }
+            .bio {
+                text-align: center;
+                margin-top: 5%;
+            }
+          }
+        }
+    
+    .fee, .rails {
+            text-align: center;
+            padding-bottom: 3%;
+            color: rgba(0,0,0,0.9);
+        }
+    .front-end li:nth-child(odd), .rails li:nth-child(odd) {
+        background: rgba(190,190,190,0.7);
+    }
+
+    .front-end li:nth-child(even), .rails li:nth-child(even) {
+        background: rgba(150,150,150,0.7);
+    } 
+    .front-end-title, .rails-title {
+        text-align: center;
+        background: rgba(190,190,190,0.7);
+        height: 15vh;
+        
+        h2 {
+            margin: 0;
+            padding: 3%;
+            border-bottom: 1px solid rgba(57, 71, 78, 1);
+        }
+    }
+}
 }
 // .learn:after {
 //    content:"";

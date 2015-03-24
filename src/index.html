@@ -25,43 +25,105 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container-fluid" ng-controller="MainCtrl">
+    <div class="container-fluid" ng-controller="MainCtrl as app">
     
       <header class="text-center lined">
-          <img src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1001988/logo3.png" alt="I'm Yeoman"><br>
+          <img class="ironlogo" src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1001988/logo3.png" alt="I'm Yeoman"><br>
           <h3>Welcome to Demo Day!</h3>
-          
+          <div class="no-mobile">
           <p class="tiy-info">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr. Cray small batch Brooklyn seitan asymmetrical Neutra chambray. </p>
           <p class="tiy-info">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr. Cray small batch Brooklyn seitan asymmetrical Neutra chambray. Blue Bottle craft beer semiotics, Williamsburg hoodie chillwave health goth. Pork belly master cleanse pickled narwhal. Hashtag heirloom church-key kitsch, stumptown cred seitan try-hard yr. Actually vegan selfies skateboard cold-pressed small batch.</p>
+          </div>
           <div class="learn">
               <button class="btn btn-learn btn-lg">Check Out The Projects</button>
           </div>
       </header>
+      <section class="front-end-title">
+          <h2>Front End Engineering</h2>
+      </section>
+      <ul class="front-end container-fluid">
+          
       
-      <section id="front-end">
-          <div class="team col-xs-12">
-              <div class="team-thumb col-xs-12 col-md-6">
-              <img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail">
+          <li class="container-fluid" ng-repeat="team in app.frontEnders">
+
+             <h3 class="fee">{{team.title}}</h3>
+                <div class="bio col-xs-12">
+                    <h4><a ng-href="{{team.url}}">{{team.title}}</a></h4>
+                    <p>Developed By: {{team.students.name1}} and {{team.students.name2}}</p>
+                    <h5>What is it?</h5>
+                    <p>{{team.description}}</p>
+                 </div>
+                 <div class="team-content">
+                     <div class="row">
+                      <div class="team-thumb col-xs-12 col-md-6">
+                          <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                      </div>
+                      <div class="bio col-xs-12 col-md-6">
+                          <h4>{{team.students.name1}}</h4>
+                          <p>{{team.description}}</p>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="team-thumb col-xs-12 col-md-6">
+                          <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                      </div>
+                      <div class="bio col-xs-12 col-md-6">
+                          <h4>{{team.students.name2}}</h4>
+                          <p>{{team.description}}</p>
+                      </div>
+                      </div>
+                  </div>
+    <!--
+              <div class="individual col-xs-12">
+                  <div class="individual-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
+                  <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
               </div>
-              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
-          </div>
-          <div class="individual col-xs-12">
-              <div class="individual-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
-              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
-          </div>
+    -->
+          </li>
+      </ul>
+       <section class="rails-title">
+          <h2>Rails Engineering</h2>
       </section>
-      <section id="rails">
-          <div class="team col-xs-12">
-              <div class="team-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
-              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
-          </div>
-          <div class="individual col-xs-12">
-              <div class="individual-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
-              <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
-          </div>
-      </section>
-    
-    
+      <ul class="rails container-fluid">
+          
+      
+          <li class="container-fluid" ng-repeat="team in app.frontEnders">
+
+             <h3 class="fee">{{team.title}}</h3>
+                <div class="bio col-xs-12">
+                    <h4><a ng-href="{{team.url}}">{{team.title}}</a></h4>
+                    <p>Developed By: {{team.students.name1}} and {{team.students.name2}}</p>
+                    <h5>What is it?</h5>
+                    <p>{{team.description}}</p>
+                 </div>
+                 <div class="team-content">
+                     <div class="row">
+                      <div class="team-thumb col-xs-12 col-md-6">
+                          <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                      </div>
+                      <div class="bio col-xs-12 col-md-6">
+                          <h4>{{team.students.name1}}</h4>
+                          <p>{{team.description}}</p>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="team-thumb col-xs-12 col-md-6">
+                          <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                      </div>
+                      <div class="bio col-xs-12 col-md-6">
+                          <h4>{{team.students.name2}}</h4>
+                          <p>{{team.description}}</p>
+                      </div>
+                      </div>
+                  </div>
+    <!--
+              <div class="individual col-xs-12">
+                  <div class="individual-thumb col-xs-12 col-md-6"><img src="http://lorempixel.com/200/200/people" alt="" class="thumbnail"></div>
+                  <p class="bio col-xs-12 col-md-6">Kitsch next level Wes Anderson, mixtape shabby chic pug wolf craft beer brunch drinking vinegar 90's. Kogi freegan health goth Tumblr.</p>
+              </div>
+    -->
+          </li>
+      </ul>
     </div>
     
 
