@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <link rel="stylesheet" href="app/vendor.css">
     <!-- bower:css -->
@@ -46,31 +47,50 @@
       
           <li class="container-fluid" ng-repeat="team in app.frontEnders">
 
-             <h3 class="fee">{{team.title}}</h3>
+             <h3 class="fee"><a ng-href="{{team.url}}">{{team.title}}</a></h3>
                 <div class="bio col-xs-12">
-                    <h4><a ng-href="{{team.url}}">{{team.title}}</a></h4>
                     <p>Developed By: {{team.students.name1}} and {{team.students.name2}}</p>
                     <h5>What is it?</h5>
                     <p>{{team.description}}</p>
                  </div>
-                 <div class="team-content">
+                 <div class="team-content no-mobile">
                      <div class="row">
-                      <div class="team-thumb col-xs-12 col-md-6">
-                          <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
-                      </div>
-                      <div class="bio col-xs-12 col-md-6">
-                          <h4>{{team.students.name1}}</h4>
-                          <p>{{team.description}}</p>
-                      </div>
+                          <div class="team-thumb col-xs-12 col-md-6">
+                              <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                          </div>
+                          <div class="bio col-xs-12 col-md-6">
+                              <h4>{{team.students.name1}} <a href="https://github.com/LoganArnett"><span class="fa fa-github fa-2x"></span></a> <a href="https://twitter.com/rxnerd"><span class="fa fa-twitter fa-2x"></span></a> <a href="mailto:logan@loganarnett.com"><span class="fa fa-envelope fa-2x"></span></a></h4>
+                              <p>{{team.description}}</p>
+                          </div>
                       </div>
                       <div class="row">
-                      <div class="team-thumb col-xs-12 col-md-6">
-                          <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                          <div class="bio col-xs-12 col-md-6">
+                              <h4>{{team.students.name2}} <a href=""><span class="fa fa-github fa-2x"></span> </a><a href=""><span class="fa fa-twitter fa-2x"></span></a></h4>
+                              <p>{{team.description}}</p>
+                          </div>
+                          <div class="team-thumb col-xs-12 col-md-6">
+                              <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                          </div>
                       </div>
-                      <div class="bio col-xs-12 col-md-6">
-                          <h4>{{team.students.name2}}</h4>
-                          <p>{{team.description}}</p>
+                  </div>
+                  <div class="team-content mobile">
+                     <div class="row">
+                          <div class="team-thumb col-xs-12 col-md-6">
+                              <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                          </div>
+                          <div class="bio col-xs-12 col-md-6">
+                              <h4>{{team.students.name1}} <a href="https://github.com/LoganArnett"><span class="fa fa-github fa-2x"></span></a> <a href="https://twitter.com/rxnerd"><span class="fa fa-twitter fa-2x"></span></a> <a href="mailto:logan@loganarnett.com"><span class="fa fa-envelope fa-2x"></span></a></h4>
+                              <p>{{team.description}}</p>
+                          </div>
                       </div>
+                      <div class="row">
+                         <div class="team-thumb col-xs-12 col-md-6">
+                              <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
+                          </div>
+                          <div class="bio col-xs-12 col-md-6">
+                              <h4>{{team.students.name2}} <a href=""><span class="fa fa-github fa-2x"></span> </a><a href=""><span class="fa fa-twitter fa-2x"></span></a></h4>
+                              <p>{{team.description}}</p>
+                          </div>
                       </div>
                   </div>
     <!--
@@ -87,7 +107,7 @@
       <ul class="rails container-fluid">
           
       
-          <li class="container-fluid" ng-repeat="team in app.frontEnders">
+          <li class="container-fluid" ng-repeat="team in app.rubyists">
 
              <h3 class="fee">{{team.title}}</h3>
                 <div class="bio col-xs-12">
@@ -106,7 +126,7 @@
                           <p>{{team.description}}</p>
                       </div>
                       </div>
-                      <div class="row">
+                      <div class="row" ng-hide="team.students.name2 == false">
                       <div class="team-thumb col-xs-12 col-md-6">
                           <img ng-src="{{team.students.img1}}" alt="" class="thumbnail">
                       </div>
