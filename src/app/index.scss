@@ -1,12 +1,16 @@
+$tiyDark: rgba(57, 71, 78, 1);
+$tiyTrans: rgba(57, 71, 78, 0.8);
+
 a, a:hover {
     text-decoration: none;
 }
 .container-fluid {
     padding: 0;
     margin: 0;
+    font-family: 'Arvo', serif;
     
     header {
-        background-color: rgba(57, 71, 78, 1);
+        background-color: $tiyDark;
         height: 100vh;
         color: white;
         
@@ -29,21 +33,36 @@ a, a:hover {
         width: 100%;
         background-color: rgba(255,255,255,0.4);
         
-        .btn-learn {
-            margin-top: 1.4%;
-            background-color: rgba(57, 71, 78, 0.8);
+        .arrow {
+            font-size: 65pt;
         }
     }
     .front-end.container-fluid, .rails.container-fluid  {
         text-align: center;
+        .view-btns {
+           padding-bottom: 2%; 
+            .btn-tiy {
+            background: $tiyDark;
+            color: white;
+            font-size: 13pt;
+           }
+        }
+        
         
         .team-content {
             width: 90%;
             margin: 0 auto;
         
             .team-thumb, .individual-thumb {
-                img { 
-                  margin: 4% auto 5%;
+                img {
+                    width: 270px;
+                    height: 270px;
+                }
+                img.image1 { 
+                  margin: 4% 0 5% 55%;
+                }
+                img.image2 { 
+                  margin: 4% 40% 5% 0;
                 }
             }
             .bio {
@@ -55,8 +74,10 @@ a, a:hover {
     
     .fee, .rails {
             text-align: center;
-            padding-bottom: 3%;
             color: rgba(0,0,0,0.9);
+            font-size: 23pt;
+            text-decoration: underline;
+            padding-bottom: 1%;
         }
     .front-end li:nth-child(odd), .rails li:nth-child(odd) {
         background: rgba(190,190,190,0.7);
@@ -79,6 +100,7 @@ a, a:hover {
     }
     a span.fa-github, a span.fa-twitter, a span.fa-envelope {
         color: rgba(0,0,0,0.6);
+        font-size: 20pt;
     }
     a span.fa-github:hover {
         color: rebeccapurple;
@@ -97,10 +119,111 @@ a, a:hover {
         margin-bottom: 2%;
     }
 }
-@media (max-width: 480px) {
-  .no-mobile {
-    display: none;
+.learn-more {
+        font-family: 'Arvo', serif;
+        background: $tiyDark;
+        height: 30vh;
+        position: relative;
+    .social {
+        text-align: center;
+        color: white;
+        padding-top: 2%;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+footer {
+    font-family: 'Arvo', serif;
+    background: $tiyTrans;
+    height: 6vh;
+    color: white;
+    text-align: center;
+    p {
+        padding-top: 1%;
+    }
+}
+.contact-links {
+    margin-top: 2%;
+  a {
+     color: white;
+     font-size: 14pt;
   }
+  a.phone-link:hover {
+      color: limegreen;
+  }
+  a.email-link:hover {
+      color: lightslategray;
+  }
+  a.twit-link:hover {
+      color: dodgerblue;
+  }
+  .phone {
+    text-align: right;
+  }
+  .email {
+    text-align: center;
+  }
+  .tiytwit {
+    text-align: left;
+  }
+}
+@media (max-width: 992px){
+    
+    .container-fluid {
+        .no-mobile {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        header {
+        
+        img {
+            margin-top: 10%;
+            width: 40%;
+        }
+    }
+       .front-end.container-fluid, .rails.container-fluid  {
+        
+        .team-content {
+        
+            .team-thumb, .individual-thumb {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+                img.image1 { 
+                  margin: 4% auto 5%;
+                }
+                img.image2 { 
+                  margin: 4% auto 5%;
+                }
+            }
+            .bio {
+                margin-top: 0;
+            }
+            
+          }
+        }
+    }
+    .learn-more {
+        height: 35vh;
+       .social {
+            width: 100%;
+            margin: 0 auto;
+   }
+    .contact-links {
+        margin-top: 2%;
+      .phone, .email, .tiytwit {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+  }  
+}
+   
+    
+}
+@media (max-width: 480px) {
   .container-fluid {
     padding: 0;
     margin: 0;
@@ -128,10 +251,167 @@ a, a:hover {
             width: 100%;
         }
     }
-      .mobile {
-        display: block;
+    
+}
+        .learn-more {
+        height: 40vh;
+       .social {
+            width: 100%;
+            margin: 0 auto;
+   }
+    .contact-links {
+        margin-top: 2%;
+      .phone, .email, .tiytwit {
+        text-align: center;
+        margin-bottom: 2%;
     }
+  }  
 }
 }
+@media (max-width: 667px)
+    and (orientation : landscape) {
+       .container-fluid {
+    padding: 0;
+    margin: 0;
+    
+    header {
+        background-color: rgba(57, 71, 78, 1);
+        height: 100vh;
+        color: white;
+        
+        img {
+            align-content: center;
+            margin-top: 5%;
+            width: 30%;
+        }
+        .learn {
+            height: 15vh;
+            .arrow {
+                font-size: 35pt;
+            }
+        }
+    }
+    .front-end-title, .rails-title {
+        height: 20vh;
+        h2 {
+            width: 100%;
+        }
+    }
+    
+}
+        .learn-more {
+        height: 65vh;
+       .social {
+            width: 100%;
+            margin: 0 auto;
+   }
+    .contact-links {
+        margin-top: 2%;
+      .phone, .email, .tiytwit {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+  }  
+}
+   footer {
+       height: 12vh;
+   }
+    }
+@media (max-width: 330px) {
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    
+    header {
+        background-color: rgba(57, 71, 78, 1);
+        height: 100vh;
+        color: white;
+        
+        img {
+            align-content: center;
+            margin-top: 20%;
+            width: 80%;
+        }
+        .learn {
+            .arrow {
+                font-size: 45pt;
+            }
+        }
+    }
+    .front-end-title, .rails-title {
+        height: 20vh;
+        h2 {
+            width: 100%;
+        }
+    }
+    
+}
+        .learn-more {
+        height: 60vh;
+       .social {
+            width: 100%;
+            margin: 0 auto;
+   }
+    .contact-links {
+        margin-top: 2%;
+      .phone, .email, .tiytwit {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+  }  
+}
+}
+@media (max-width: 568px)
+    and (orientation : landscape) {
+       .container-fluid {
+    padding: 0;
+    margin: 0;
+    
+    header {
+        background-color: rgba(57, 71, 78, 1);
+        height: 100vh;
+        color: white;
+        
+        img {
+            align-content: center;
+            margin-top: 0;
+            width: 25%;
+        }
+        h3 {
+          margin-top: 0;  
+        }
+        .learn {
+            height: 20vh;
+            .arrow {
+                font-size: 25pt;
+            }
+        }
+    }
+    .front-end-title, .rails-title {
+        height: 20vh;
+        h2 {
+            width: 100%;
+        }
+    }
+    
+}
+        .learn-more {
+        height: 65vh;
+       .social {
+            width: 100%;
+            margin: 0 auto;
+   }
+    .contact-links {
+        margin-top: 2%;
+      .phone, .email, .tiytwit {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+  }  
+}
+   footer {
+       height: 12vh;
+   }
+    }
 // injector
 // endinjector
