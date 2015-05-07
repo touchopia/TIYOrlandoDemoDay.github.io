@@ -2,6 +2,79 @@
 
 angular.module('tiyorlandoDemoDaygithubio')
   .controller('MainCtrl', function () {
+    this.springiOSCohort = [
+      {
+        'title': 'Bagel Runner',
+        'repo': '',
+        'students': {
+            'name1': 'Joe Rocca',
+            'img1': '',
+            'git1': '',
+            'twit1': '',
+            'email1': ''
+        }
+        
+      },
+      {
+        'title': "Orlando's Very Own",
+        'repo': '',
+        'students': {
+            'name1': 'Jordan Anderson',
+            'img1': '',
+            'git1': '',
+            'twit1': '',
+            'email1': ''
+        }
+        
+      },
+      {
+        'title': '',
+        'repo': '',
+        'students': {
+            'name1': 'Richard Herndon',
+            'img1': '',
+            'git1': '',
+            'twit1': '',
+            'email1': ''
+        }
+        
+      },
+      {
+        'title': '',
+        'repo': '',
+        'students': {
+            'name1': 'Jim Diaz',
+            'img1': '',
+            'git1': '',
+            'twit1': '',
+            'email1': ''
+        }
+        
+      },
+      {
+        'title': 'BreakUp',
+        'repo': '',
+        'students': {
+            'name1': 'Randall Lee',
+            'img1': '',
+            'git1': '',
+            'twit1': '',
+            'email1': ''
+        }
+        
+      },
+      {
+        'title': "what'sTheBuzz",
+        'repo': '',
+        'students': {
+            'name1': 'Keaton Swoboda',
+            'img1': '',
+            'git1': '',
+            'twit1': '',
+            'email1': ''
+        }
+        
+      }];
     this.frontEnders = [
       {
         'title': 'Whats Pup',
