@@ -5,13 +5,14 @@ angular.module('tiyorlandoDemoDaygithubio')
     this.springiOSCohort = [
       {
         'title': 'Bagel Runner',
+        'description': " Bagel Runner is a endless runner game where Cleo the toaster must dodge his greatest foe, The Bagel in hopes of finding a better life where he can shamelessly enjoy his favorite treat The Toaster Strudel.",
         'repo': '',
         'students': {
             'name1': 'Joe Rocca',
             'img1': '',
-            'git1': '',
+            'git1': 'joerocca',
             'twit1': '',
-            'email1': ''
+            'email1': 'jprocca813@gmail.com'
         }
         
       },
@@ -53,13 +54,14 @@ angular.module('tiyorlandoDemoDaygithubio')
       },
       {
         'title': 'BreakUp',
+        'description': 'BreakUp is a mashup of Pinball, and Breakout with the objective of surviving as long as possible while racking up points.',
         'repo': '',
         'students': {
             'name1': 'Randall Lee',
             'img1': '',
-            'git1': '',
-            'twit1': '',
-            'email1': ''
+            'git1': 'rclee',
+            'twit1': 'rcleeDev',
+            'email1': 'randallee@gmail.com'
         }
         
       },
