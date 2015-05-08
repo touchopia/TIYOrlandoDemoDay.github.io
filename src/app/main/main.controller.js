@@ -67,13 +67,14 @@ angular.module('tiyorlandoDemoDaygithubio')
       },
       {
         'title': "what'sTheBuzz",
+        'description': 'what’sTheBuzz is a social media aggregator to bring you news articles on what is trending right now from Twitter, Google, and Yahoo.',
         'repo': '',
         'students': {
             'name1': 'Keaton Swoboda',
             'img1': '',
-            'git1': '',
-            'twit1': '',
-            'email1': ''
+            'git1': 'keatonswob',
+            'twit1': 'keatonswob',
+            'email1': 'keaton.swoboda@gmail.com'
         }
         
       }];
