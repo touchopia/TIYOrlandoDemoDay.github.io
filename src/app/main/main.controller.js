@@ -9,46 +9,10 @@ angular.module('tiyorlandoDemoDaygithubio')
         'repo': '',
         'students': {
             'name1': 'Joe Rocca',
-            'img1': '',
+            'img1': 'assets/images/JoeRocca.jpg',
             'git1': 'joerocca',
             'twit1': '',
             'email1': 'jprocca813@gmail.com'
-        }
-        
-      },
-      {
-        'title': "Orlando's Very Own",
-        'repo': '',
-        'students': {
-            'name1': 'Jordan Anderson',
-            'img1': '',
-            'git1': '',
-            'twit1': '',
-            'email1': ''
-        }
-        
-      },
-      {
-        'title': '',
-        'repo': '',
-        'students': {
-            'name1': 'Richard Herndon',
-            'img1': '',
-            'git1': '',
-            'twit1': '',
-            'email1': ''
-        }
-        
-      },
-      {
-        'title': '',
-        'repo': '',
-        'students': {
-            'name1': 'Jim Diaz',
-            'img1': '',
-            'git1': '',
-            'twit1': '',
-            'email1': ''
         }
         
       },
@@ -63,6 +27,43 @@ angular.module('tiyorlandoDemoDaygithubio')
             'twit1': 'rcleeDev',
             'email1': 'randallee@gmail.com'
         }
+      },
+      {
+        'title': "Orlando's Very Own",
+	'description': 'OVO is an Orlando City Soccer Club based app made by a fan for the fans.'
+        'repo': '',
+        'students': {
+            'name1': 'Jordan Anderson',
+            'img1': 'assets/images/JordanAnderson.jpg',
+            'git1': 'wambambizzle',
+            'twit1': 'wambambizzle',
+            'email1': 'mr.janderson14@gmail.com'
+        }
+        
+      },
+      {
+        'title': 'TRAKR',
+	'description': 'TRAKR allows individuals to create and track multiple training regiments and display graphs of their progress for each individual exercise."
+        'repo': '',
+        'students': {
+            'name1': 'Richard Herndon',
+            'img1': 'assets/images/RichardHerndon.jpg',
+            'git1': 'rherndon47',
+            'twit1': 'RichardHerndon3',
+            'email1': 'richardherndon@mac.com'
+        }
+        
+      },
+      {
+        'title': '',
+        'repo': '',
+        'students': {
+            'name1': 'Jim Diaz',
+            'img1': 'assets/images/JimDiaz.jpg',
+            'git1': '',
+            'twit1': '',
+            'email1': ''
+        }
         
       },
       {
@@ -71,12 +72,11 @@ angular.module('tiyorlandoDemoDaygithubio')
         'repo': '',
         'students': {
             'name1': 'Keaton Swoboda',
-            'img1': '',
+            'img1': 'assets/images/KeatonSwoboda.jpg',
             'git1': 'keatonswob',
             'twit1': 'keatonswob',
             'email1': 'keaton.swoboda@gmail.com'
         }
-        
       }];
     this.frontEnders = [
       {
