@@ -22,7 +22,7 @@ angular.module('tiyorlandoDemoDaygithubio')
         'repo': '',
         'students': {
             'name1': 'Randall Lee',
-            'img1': '',
+            'img1': 'RandallLee.jpg',
             'git1': 'rclee',
             'twit1': 'rcleeDev',
             'email1': 'randallee@gmail.com'
@@ -55,14 +55,15 @@ angular.module('tiyorlandoDemoDaygithubio')
         
       },
       {
-        'title': '',
+        'title': 'Car Buddy',
+	'description': "Car Buddy is an iPhone to iPhone audio streaming app that  presents your passenger's voice  to your ears for stress free listening while driving.",
         'repo': '',
         'students': {
             'name1': 'Jim Diaz',
             'img1': 'assets/images/JimDiaz.jpg',
-            'git1': '',
+            'git1': 'combobulated',
             'twit1': '',
-            'email1': ''
+            'email1': 'james.diaz@ieee.org'
         }
         
       },
