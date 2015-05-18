@@ -7,11 +7,6 @@
     <li class="container-fluid" ng-repeat="team in app.springiOSCohort">
 
        <h3 class="fee">{{team.title}}</h3>
-        <p class="view-btns">
-            <a ng-href="{{team.repo}}" class="btn btn-tiy">
-                View Source
-            </a>
-        </p>
           <div class="bio main-bio col-xs-12">
               <p>Developed By: {{team.students.name1}}</p>
               <h5>What is it?</h5>
@@ -49,7 +44,7 @@
                             <a ng-href="https://github.com/{{team.students.git1}}">
                                 <span class="fa fa-github fa-2x"></span>
                             </a>
-                            <a ng-href="https://twitter.com/{{team.students.twit1}}">
+                            <a ng-hide="team.students.twit1 == false" ng-href="https://twitter.com/{{team.students.twit1}}">
                                 <span class="fa fa-twitter fa-2x"></span>
                             </a>
                             <a ng-href="mailto:{{team.students.email1}}">
