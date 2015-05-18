@@ -8,12 +8,12 @@ a, a:hover {
     padding: 0;
     margin: 0;
     font-family: 'Arvo', serif;
-    
+
     header {
         background-color: $tiyDark;
         height: 100vh;
         color: white;
-        
+
         img {
             align-content: center;
             margin-top: 5%;
@@ -32,36 +32,36 @@ a, a:hover {
         height: 12vh;
         width: 100%;
         background-color: rgba(255,255,255,0.4);
-        
+
         .arrow {
             font-size: 65pt;
         }
     }
-    .front-end.container-fluid, .rails.container-fluid  {
+    .front-end.container-fluid, .rails.container-fluid, .ios.container-fluid  {
         text-align: center;
         .view-btns {
-           padding-bottom: 2%; 
+           padding-bottom: 2%;
             .btn-tiy {
             background: $tiyDark;
             color: white;
             font-size: 13pt;
            }
         }
-        
-        
+
+
         .team-content {
             width: 90%;
             margin: 0 auto;
-        
+
             .team-thumb, .individual-thumb {
                 img {
                     width: 270px;
                     height: 270px;
                 }
-                img.image1 { 
+                img.image1 {
                   margin: 4% 0 5% 55%;
                 }
-                img.image2 { 
+                img.image2 {
                   margin: 4% 40% 5% 0;
                 }
             }
@@ -71,7 +71,7 @@ a, a:hover {
             }
           }
         }
-    
+
     .fee, .rails {
             text-align: center;
             color: rgba(0,0,0,0.9);
@@ -79,18 +79,18 @@ a, a:hover {
             text-decoration: underline;
             padding-bottom: 1%;
         }
-    .front-end li:nth-child(odd), .rails li:nth-child(odd) {
+    .front-end li:nth-child(odd), .rails li:nth-child(odd), .ios li:nth-child(odd) {
         background: rgba(190,190,190,0.7);
     }
 
-    .front-end li:nth-child(even), .rails li:nth-child(even) {
+    .front-end li:nth-child(even), .rails li:nth-child(even), .ios li:nth-child(even) {
         background: rgba(150,150,150,0.7);
-    } 
+    }
     .front-end-title, .rails-title {
         text-align: center;
         background: #39474e;
         height: 15vh;
-        
+
         h2 {
             margin: 0 auto;
             padding: 3%;
@@ -167,8 +167,13 @@ footer {
     text-align: left;
   }
 }
+
+.main-bio p {
+  width: 60%;
+  margin: 0 auto;
+}
 @media (max-width: 992px){
-    
+
     .container-fluid {
         .no-mobile {
             display: none;
@@ -177,32 +182,32 @@ footer {
             display: block;
         }
         header {
-        
+
         img {
             margin-top: 10%;
             width: 40%;
         }
     }
-       .front-end.container-fluid, .rails.container-fluid  {
-        
+       .front-end.container-fluid, .rails.container-fluid, .ios.container-fluid  {
+
         .team-content {
-        
+
             .team-thumb, .individual-thumb {
                 img {
                     width: 200px;
                     height: 200px;
                 }
-                img.image1 { 
+                img.image1 {
                   margin: 4% auto 5%;
                 }
-                img.image2 { 
+                img.image2 {
                   margin: 4% auto 5%;
                 }
             }
             .bio {
                 margin-top: 0;
             }
-            
+
           }
         }
     }
@@ -218,21 +223,24 @@ footer {
         text-align: center;
         margin-bottom: 2%;
     }
-  }  
+  }
 }
-   
-    
+.main-bio p {
+  width: 80%;
+  margin: 0 auto;
+}
+
 }
 @media (max-width: 480px) {
   .container-fluid {
     padding: 0;
     margin: 0;
-    
+
     header {
         background-color: rgba(57, 71, 78, 1);
         height: 100vh;
         color: white;
-        
+
         img {
             align-content: center;
             margin-top: 20%;
@@ -251,7 +259,7 @@ footer {
             width: 100%;
         }
     }
-    
+
 }
         .learn-more {
         height: 40vh;
@@ -265,7 +273,11 @@ footer {
         text-align: center;
         margin-bottom: 2%;
     }
-  }  
+  }
+}
+.main-bio p {
+  width: 95%;
+  margin: 0 auto;
 }
 }
 @media (max-width: 667px)
@@ -273,12 +285,12 @@ footer {
        .container-fluid {
     padding: 0;
     margin: 0;
-    
+
     header {
         background-color: rgba(57, 71, 78, 1);
         height: 100vh;
         color: white;
-        
+
         img {
             align-content: center;
             margin-top: 5%;
@@ -297,7 +309,7 @@ footer {
             width: 100%;
         }
     }
-    
+
 }
         .learn-more {
         height: 65vh;
@@ -311,7 +323,7 @@ footer {
         text-align: center;
         margin-bottom: 2%;
     }
-  }  
+  }
 }
    footer {
        height: 12vh;
@@ -321,12 +333,12 @@ footer {
   .container-fluid {
     padding: 0;
     margin: 0;
-    
+
     header {
         background-color: rgba(57, 71, 78, 1);
         height: 100vh;
         color: white;
-        
+
         img {
             align-content: center;
             margin-top: 20%;
@@ -344,7 +356,7 @@ footer {
             width: 100%;
         }
     }
-    
+
 }
         .learn-more {
         height: 60vh;
@@ -358,7 +370,7 @@ footer {
         text-align: center;
         margin-bottom: 2%;
     }
-  }  
+  }
 }
 }
 @media (max-width: 568px)
@@ -366,19 +378,19 @@ footer {
        .container-fluid {
     padding: 0;
     margin: 0;
-    
+
     header {
         background-color: rgba(57, 71, 78, 1);
         height: 100vh;
         color: white;
-        
+
         img {
             align-content: center;
             margin-top: 0;
             width: 25%;
         }
         h3 {
-          margin-top: 0;  
+          margin-top: 0;
         }
         .learn {
             height: 20vh;
@@ -393,7 +405,7 @@ footer {
             width: 100%;
         }
     }
-    
+
 }
         .learn-more {
         height: 65vh;
@@ -407,7 +419,7 @@ footer {
         text-align: center;
         margin-bottom: 2%;
     }
-  }  
+  }
 }
    footer {
        height: 12vh;

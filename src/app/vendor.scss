@@ -1,3 +1,27 @@
 $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
 @import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+.ios li:nth-child(odd) .ios-thumb {
+  @extend .col-md-6;
+  @extend .col-xs-12;
+}
+.ios li:nth-child(odd) .ios-bio {
+  @extend .col-md-6;
+  @extend .col-xs-12;
+}
+
+.ios.container-fluid li:nth-child(even) .team-thumb.ios-thumb {
+  @extend .col-md-6;
+  @extend .col-md-push-6;
+  @extend .col-xs-12;
+
+  img.image1 {
+    margin: 4% 40% 5% 0;
+  }
+}
+.ios li:nth-child(even) .ios-bio {
+  @extend .col-md-6;
+  @extend .col-md-pull-6;
+  @extend .col-xs-12;
+}

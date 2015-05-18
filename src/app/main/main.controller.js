@@ -14,7 +14,7 @@ angular.module('tiyorlandoDemoDaygithubio')
             'twit1': '',
             'email1': 'jprocca813@gmail.com'
         }
-        
+
       },
       {
         'title': 'BreakUp',
@@ -22,7 +22,7 @@ angular.module('tiyorlandoDemoDaygithubio')
         'repo': '',
         'students': {
             'name1': 'Randall Lee',
-            'img1': 'RandallLee.jpg',
+            'img1': 'assets/images/RandallLee.jpg',
             'git1': 'rclee',
             'twit1': 'rcleeDev',
             'email1': 'randallee@gmail.com'
@@ -30,7 +30,7 @@ angular.module('tiyorlandoDemoDaygithubio')
       },
       {
         'title': "Orlando's Very Own",
-	'description': 'OVO is an Orlando City Soccer Club based app made by a fan for the fans.'
+	'description': 'OVO is an Orlando City Soccer Club based app made by a fan for the fans.',
         'repo': '',
         'students': {
             'name1': 'Jordan Anderson',
@@ -39,11 +39,11 @@ angular.module('tiyorlandoDemoDaygithubio')
             'twit1': 'wambambizzle',
             'email1': 'mr.janderson14@gmail.com'
         }
-        
+
       },
       {
         'title': 'TRAKR',
-	'description': 'TRAKR allows individuals to create and track multiple training regiments and display graphs of their progress for each individual exercise."
+	'description': 'TRAKR allows individuals to create and track multiple training regiments and display graphs of their progress for each individual exercise.',
         'repo': '',
         'students': {
             'name1': 'Richard Herndon',
@@ -52,7 +52,7 @@ angular.module('tiyorlandoDemoDaygithubio')
             'twit1': 'RichardHerndon3',
             'email1': 'richardherndon@mac.com'
         }
-        
+
       },
       {
         'title': 'Car Buddy',
@@ -65,7 +65,7 @@ angular.module('tiyorlandoDemoDaygithubio')
             'twit1': '',
             'email1': 'james.diaz@ieee.org'
         }
-        
+
       },
       {
         'title': "what'sTheBuzz",
@@ -79,7 +79,7 @@ angular.module('tiyorlandoDemoDaygithubio')
             'email1': 'keaton.swoboda@gmail.com'
         }
       }];
-    this.frontEnders = [
+    this.fall2015FrontEnders = [
       {
         'title': 'Whats Pup',
         'url': 'https://whatspup.firebaseapp.com',
@@ -110,7 +110,7 @@ angular.module('tiyorlandoDemoDaygithubio')
             'twit1': 'evanklemen',
             'email1': 'ejklemen@gmail.com',
             'name2': false,
-            
+
         }
       },
       {
@@ -157,7 +157,7 @@ angular.module('tiyorlandoDemoDaygithubio')
             'twit1': 'Maddie_T_Fees',
             'email1': 'Madison.Fees90@gmail.com',
             'name2': false,
-            
+
         }
       },
         {
@@ -189,7 +189,7 @@ angular.module('tiyorlandoDemoDaygithubio')
         }
       },
     ];
-    this.rubyists = [
+    this.fall2015Rubyists = [
       {
         'title': 'New Start',
         'url': 'https://github.com/new-start/project',
