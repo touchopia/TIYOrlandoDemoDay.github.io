@@ -47,7 +47,7 @@
               <a ng-href="https://github.com/{{student.git}}">
                 <span class="fa fa-github fa-2x"></span>
               </a>
-              <a ng-hide="student.twit" ng-href="https://twitter.com/{{student.twit}}">
+              <a ng-show="!!student.twit" ng-href="https://twitter.com/{{student.twit}}">
                 <span class="fa fa-twitter fa-2x"></span>
               </a>
               <a ng-href="mailto:{{student.email}}">
