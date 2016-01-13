@@ -26,13 +26,19 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
   padding-bottom: 1em;
 }
 section.title {
-  height: 60;
+  height: 60px;
   text-align: center;
   background: #39474e;
   h2 {
     margin: 0 auto;
     padding: 1%;
-    width: 40%;
     color: #fff;
+    line-height: 1.5;
+    &.mobile {
+      font-size: 180%;
+    }
   }
+}
+footer p {
+  margin-bottom: 0;
 }
