@@ -2,6 +2,58 @@
 
 angular.module('tiyorlandoDemoDaygithubio')
   .controller('MainCtrl', function () {
+    this.spring2016Cohorts = [
+      {
+        'discipline': 'Front End',
+        'teams': [
+          {
+            'students': [
+              {'name': 'Brian Asquith', 'img': 'BrianAsquith.png', 'git': 'basquith16', 'email': 'basquithcpt@gmail.com', 'twit': 'basquith16'}
+            ],
+            'title': 'TykeTime',
+            'description': 'An all-inclusive organizer and planner for parents.'
+          }
+        ]
+      },
+      {
+        'discipline': 'iOS',
+        'teams': [
+          {
+            'students': [
+              {'name': 'Elizabeth Elliott', 'img': 'ElizabethElliott.jpg', 'git': 'Za1006', 'email': 'elliott1006@gmail.com', 'twit': 'soulbeginning'},
+              {'name': 'Michael Reynolds', 'img': 'MichaelReynolds.jpg', 'git': 'MTR2D2', 'email': 'reynoldsmichael945@gmail.com', 'twit': 'mtr2d2'},
+              {'name': 'Keron Williams', 'img': 'KeronWilliams.jpg', 'git': 'kdw9', 'email': 'keronwilliams9@gmail.com'}
+            ],
+            'title': 'Get Well',
+            'description': 'A simple solution to escape from the pressure and stress of daily life. Relaxing music, peaceful images, and powerful affirmation allow you to get well, and stay well.'
+          },
+          {
+            'students': [
+              {'name': 'Pedro Vargas', 'img': 'PedroTrujillo.jpg', 'git': 'PedroTrujilloV', 'email': 'pedrot211@gmail.com'}
+            ],
+            'title': 'Modern Meal',
+            'description': 'Modern Meal App. Beta: The purpose of the app is to provide a rich mobile experience for existing Modernmeal.com users to work with their grocery lists.'
+          },
+          {
+            'students': [
+              {'name': 'Phillip English', 'img': 'PhillipEnglish.jpg', 'git': 'PhillipEnglish', 'email': 'vitkiarts@gmail.com'},
+              {'name': 'Sam Shaw', 'img': 'SamShaw.jpg', 'git': 'SamuelShaw', 'email': 'samyy.abcd@gmail.com', 'twit': 'born___confused'}
+            ],
+            'title': 'UrZone',
+            'description': "UrZone is a context based share wall application. The app enables a social experience that fosters engagement with the users' environment using iBeacons."
+          },
+          {
+            'students': [
+              {'name': 'Jen Hamilton', 'img': 'JenHamilton.jpg', 'git': 'embryoconcepts', 'email': 'jen@jshamilton.net', 'twit': 'embryoconcepts'},
+              {'name': 'David Johnson', 'img': 'DavidJohnson.jpg', 'git': 'daaavid', 'email': 'david.j.c.johnson@gmail.com', 'twit': 'daaavid_johnson'},
+              {'name': 'Chris Stomp', 'img': 'ChrisStomp.jpg', 'git': 'stomp1128', 'email': 'christopherstomp@gmail.com', 'twit': 'chrisstomp'}
+            ],
+            'title': 'How Much Trip',
+            'description': "A budget-centric travel-planning app that lets you get the most trip for your money."
+          }
+        ]
+      }
+    ];
     this.springiOSCohort = [
       {
         'title': 'Bagel Runner',

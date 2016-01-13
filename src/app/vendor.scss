@@ -2,26 +2,37 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 
 @import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
 
-.ios li:nth-child(odd) .ios-thumb {
-  @extend .col-md-6;
-  @extend .col-xs-12;
+.ios-3 {
+  @extend .col-md-4;
 }
-.ios li:nth-child(odd) .ios-bio {
+.ios-2 {
   @extend .col-md-6;
-  @extend .col-xs-12;
-}
-
-.ios.container-fluid li:nth-child(even) .team-thumb.ios-thumb {
-  @extend .col-md-6;
-  @extend .col-md-push-6;
-  @extend .col-xs-12;
-
-  img.image1 {
-    margin: 4% 40% 5% 0;
+  &:first-of-type div {
+    padding-left: 35%;
+  }
+  &:last-of-type div {
+    padding-right: 10%;
   }
 }
-.ios li:nth-child(even) .ios-bio {
-  @extend .col-md-6;
-  @extend .col-md-pull-6;
-  @extend .col-xs-12;
+.ios-solo {
+  @extend .col-md-12;
+}
+.ios-thumb img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.main-bio p {
+  font-size: 120%;
+  padding-bottom: 1em;
+}
+section.title {
+  height: 60;
+  text-align: center;
+  background: #39474e;
+  h2 {
+    margin: 0 auto;
+    padding: 1%;
+    width: 40%;
+    color: #fff;
+  }
 }

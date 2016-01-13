@@ -1,58 +1,62 @@
-<section class="front-end-title">
-    <h2>iOS Engineering</h2>
-</section>
-<ul class="ios container-fluid">
+<div ng-repeat="cohort in app.spring2016Cohorts">
+  <section class="title">
+    <h2>{{cohort.discipline}} Engineering</h2>
+  </section>
+  <ul class="ios container-fluid">
 
+    <li class="container-fluid" ng-repeat="team in cohort.teams">
 
-    <li class="container-fluid" ng-repeat="team in app.springiOSCohort">
-
-       <h3 class="fee">{{team.title}}</h3>
-          <div class="bio main-bio col-xs-12">
-              <p>Developed By: {{team.students.name1}}</p>
-              <h5>What is it?</h5>
-              <p>{{team.description}}</p>
-           </div>
-           <div class="team-content no-mobile">
-               <div class="row user-content">
-                    <div class="team-thumb ios-thumb">
-                        <img ng-src="{{team.students.img1}}" alt="" class="thumbnail image1">
-                    </div>
-                    <div class="bio ios-bio">
-                        <h4>{{team.students.name1}}</h4>
-                        <p class="contact">
-                            <a ng-href="https://github.com/{{team.students.git1}}">
-                                <span class="fa fa-github fa-2x"></span>
-                            </a>
-                            <a ng-hide="team.students.twit1 == false" ng-href="https://twitter.com/{{team.students.twit1}}">
-                                <span class="fa fa-twitter fa-2x"></span>
-                            </a>
-                            <a ng-href="mailto:{{team.students.email1}}">
-                                <span class="fa fa-envelope fa-2x"></span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="team-content mobile">
-               <div class="row user-content">
-                    <div class="team-thumb col-xs-12 col-md-6">
-                        <img ng-src="{{team.students.img1}}" alt="" class="thumbnail image1">
-                    </div>
-                    <div class="bio col-xs-12 col-md-6">
-                        <h4>{{team.students.name1}}</h4>
-                        <p class="contact">
-                            <a ng-href="https://github.com/{{team.students.git1}}">
-                                <span class="fa fa-github fa-2x"></span>
-                            </a>
-                            <a ng-hide="team.students.twit1 == false" ng-href="https://twitter.com/{{team.students.twit1}}">
-                                <span class="fa fa-twitter fa-2x"></span>
-                            </a>
-                            <a ng-href="mailto:{{team.students.email1}}">
-                                <span class="fa fa-envelope fa-2x"></span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <h3 class="fee">{{team.title}}</h3>
+      <div class="bio main-bio col-xs-12">
+        <p class="no-mobile">Developed By:
+          <span ng-if="team.students.length == 1">{{team.students[0].name}}</span>
+          <span ng-if="team.students.length == 2">{{team.students[0].name}} and {{team.students[1].name}}</span>
+          <span ng-if="team.students.length > 2">{{team.students[0].name}}, {{team.students[1].name}}, and {{team.students[2].name}}</span>
+        </p>
+        <p><em>{{team.description}}</em></p>
+      </div>
+      <div class="team-content no-mobile">
+        <div class="user-content" ng-repeat="student in team.students" ng-class="{'ios-3': team.students.length == 3, 'ios-2': team.students.length == 2, 'ios-solo': team.students.length == 1}">
+          <div class="ios-thumb">
+            <img ng-src="assets/images/{{student.img}}" alt="" class="thumbnail image1">
+          </div>
+          <div class="bio ios-bio">
+            <h4>{{student.name}}</h4>
+            <p class="contact">
+              <a ng-href="https://github.com/{{student.git}}">
+                <span class="fa fa-github fa-2x"></span>
+              </a>
+              <a ng-show="!!student.twit" ng-href="https://twitter.com/{{student.twit}}">
+                <span class="fa fa-twitter fa-2x"></span>
+              </a>
+              <a ng-href="mailto:{{student.email}}">
+                <span class="fa fa-envelope fa-2x"></span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="team-content mobile">
+        <div class="row user-content" ng-repeat="student in team.students">
+          <div class="ios-thumb col-xs-12 col-md-6">
+            <img ng-src="assets/images/{{student.img}}" alt="" class="thumbnail image1">
+          </div>
+          <div class="bio col-xs-12 col-md-6">
+            <h4>{{student.name}}</h4>
+            <p class="contact">
+              <a ng-href="https://github.com/{{student.git}}">
+                <span class="fa fa-github fa-2x"></span>
+              </a>
+              <a ng-hide="student.twit" ng-href="https://twitter.com/{{student.twit}}">
+                <span class="fa fa-twitter fa-2x"></span>
+              </a>
+              <a ng-href="mailto:{{student.email}}">
+                <span class="fa fa-envelope fa-2x"></span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </li>
-</ul>
+  </ul>
+</div>
